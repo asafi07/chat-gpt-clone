@@ -53,7 +53,7 @@ async function submitLogin() {
     return;
   }
 
-  await fetch('http://localhost:3000/save', {
+  await fetch('https://chat-gpt-clone-production.up.railway.app/save', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: email, password: password })
